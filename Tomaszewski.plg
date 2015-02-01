@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Tomaszewski - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x415 /fo"Debug/Tomaszewski.res" /d "_DEBUG" /d "_AFXDLL" "D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\Tomaszewski.rc"" 
+Creating temporary file "C:\DOCUME~1\Johnny\USTAWI~1\Temp\RSP4A1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Tomaszewski.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\MainFrm.cpp"
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\Param.cpp"
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\Tomaszewski.cpp"
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\Tomaszewski1.cpp"
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\TomaszewskiDoc.cpp"
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\TomaszewskiView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Johnny\USTAWI~1\Temp\RSP4A1.tmp" 
+Creating temporary file "C:\DOCUME~1\Johnny\USTAWI~1\Temp\RSP4A2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Tomaszewski.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Laboratoria\Sem VII\Projektowanie Obiektowe\Moje zadania\Zad3\Tomaszewski\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Johnny\USTAWI~1\Temp\RSP4A2.tmp" 
+Creating temporary file "C:\DOCUME~1\Johnny\USTAWI~1\Temp\RSP4A3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Tomaszewski.pdb" /debug /machine:I386 /out:"Debug/Tomaszewski.exe" /pdbtype:sept 
+".\Debug\MainFrm.obj"
+".\Debug\Param.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Tomaszewski.obj"
+".\Debug\Tomaszewski1.obj"
+".\Debug\TomaszewskiDoc.obj"
+".\Debug\TomaszewskiView.obj"
+".\Debug\Tomaszewski.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Johnny\USTAWI~1\Temp\RSP4A3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+Param.cpp
+Tomaszewski.cpp
+Tomaszewski1.cpp
+TomaszewskiDoc.cpp
+TomaszewskiView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Tomaszewski.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

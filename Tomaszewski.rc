@@ -1,0 +1,2119 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Tomaszewski.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SYMBOL_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Opcej"
+    BEGIN
+        MENUITEM "Stop",                        ID_SYMBOL_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Up",                          ID_SYMBOL_G
+        MENUITEM "Down",                        ID_SYMBOL_D
+        MENUITEM "Right",                       ID_SYMBOL_P
+        MENUITEM "Left",                        ID_SYMBOL_L, HELP
+        MENUITEM SEPARATOR
+        POPUP "Zmieniaj kolory"
+        BEGIN
+            MENUITEM "Tak",                         ID_ZMIEN_TAK
+            MENUITEM "Nie",                         ID_ZMIEN_NIE
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PARAMETRY DIALOG DISCARDABLE  0, 0, 268, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametry"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,210,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,25,50,14
+    GROUPBOX        "Rozmiar i prêdkoœæ",IDC_STATIC,7,7,93,81,BS_CENTER
+    COMBOBOX        IDC_SYMBOL_SIZE,25,30,58,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SYMBOL_SPEED,25,60,58,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rozmiar",IDC_STATIC,40,20,30,8
+    LTEXT           "Szybkoœæ",IDC_STATIC,40,50,32,8
+    GROUPBOX        "Kolor",IDC_STATIC,7,96,196,64,BS_CENTER
+    COMBOBOX        IDC_COLOR_C1,13,127,45,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COLOR_C2,78,127,45,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COLOR_C3,145,126,45,52,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Czerwony",IDC_STATIC,20,115,31,10
+    LTEXT           "Zielony",IDC_STATIC,90,115,25,8
+    LTEXT           "Niebieski",IDC_STATIC,150,115,30,9
+    GROUPBOX        "Po³o¿enie pocz¹tkowe",IDC_STATIC,108,7,95,81,BS_CENTER
+    LTEXT           "Wspó³rzêdna - X",IDC_STATIC,125,20,55,8
+    COMBOBOX        IDC_POLOZENIE_X,125,30,58,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_POLOZENIE_Y,125,60,58,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Wspó³rzêdna - Y",IDC_STATIC,125,50,55,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PARAMETRY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PARAMETRY DLGINIT
+BEGIN
+    IDC_SYMBOL_SIZE, 0x403, 2, 0
+0x0031, 
+    IDC_SYMBOL_SIZE, 0x403, 2, 0
+0x0032, 
+    IDC_SYMBOL_SIZE, 0x403, 2, 0
+0x0033, 
+    IDC_SYMBOL_SIZE, 0x403, 2, 0
+0x0034, 
+    IDC_SYMBOL_SIZE, 0x403, 2, 0
+0x0035, 
+    IDC_SYMBOL_SPEED, 0x403, 2, 0
+0x0031, 
+    IDC_SYMBOL_SPEED, 0x403, 2, 0
+0x0032, 
+    IDC_SYMBOL_SPEED, 0x403, 2, 0
+0x0033, 
+    IDC_SYMBOL_SPEED, 0x403, 2, 0
+0x0034, 
+    IDC_SYMBOL_SPEED, 0x403, 2, 0
+0x0035, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0031, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0032, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0033, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0034, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0035, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0036, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0037, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0038, 
+    IDC_COLOR_C1, 0x403, 2, 0
+0x0039, 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COLOR_C1, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COLOR_C1, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0031, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0032, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0033, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0034, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0035, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0036, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0037, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0038, 
+    IDC_COLOR_C2, 0x403, 2, 0
+0x0039, 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COLOR_C2, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COLOR_C2, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0031, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0032, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0033, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0034, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0035, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0036, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0037, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0038, 
+    IDC_COLOR_C3, 0x403, 2, 0
+0x0039, 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COLOR_C3, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3031, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3131, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3231, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3331, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3431, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3531, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3631, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3731, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3831, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3931, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3032, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3132, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3232, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3332, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0035, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0036, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0037, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0038, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3432, 0x0039, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3532, 0x0031, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3532, 0x0032, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3532, 0x0033, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3532, 0x0034, 
+    IDC_COLOR_C3, 0x403, 4, 0
+0x3532, 0x0035, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SYMBOL_STOP          "Animacja stop"
+    ID_SYMBOL_D             "Animacja Down"
+    ID_SYMBOL_P             "Animacja right"
+    ID_SYMBOL_L             "Animacja left"
+    ID_SYMBOL_G             "Animacja up"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPCEJ_STOP           "Animacja stop"
+END
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Tomaszewski.ico"
+IDR_TOMASZTYPE          ICON    DISCARDABLE     "res\\TomaszewskiDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_SYMBOL_L
+    BUTTON      ID_SYMBOL_G
+    BUTTON      ID_SYMBOL_D
+    BUTTON      ID_SYMBOL_P
+    BUTTON      ID_SYMBOL_STOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Opcje"
+    BEGIN
+        MENUITEM "&Stop              S",        ID_SYMBOL_STOP
+        MENUITEM "Up                 G",        ID_SYMBOL_G
+        MENUITEM "Down            D",           ID_SYMBOL_D
+        MENUITEM "Right             P",         ID_SYMBOL_P
+        MENUITEM "Left               L",        ID_SYMBOL_L
+        MENUITEM SEPARATOR
+        POPUP "Zmieniaj kolory"
+        BEGIN
+            MENUITEM "TAK",                         ID_ZMIEN_TAK
+            MENUITEM "NIE",                         ID_ZMIEN_NIE
+        END
+        MENUITEM "Parametry",                   ID_PARAMETRY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Tomaszewski...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Tomaszewski"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Tomaszewski Version 1.0",IDC_STATIC,40,5,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,65,110,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Zdanie nr. 3",IDC_STATIC,75,20,45,10
+    LTEXT           "Wykonal: Janusz Tomaszewski",IDC_STATIC,40,30,120,10
+    LTEXT           "Grupa 2",IDC_STATIC,80,65,30,10
+    LTEXT           "Semestr VII",IDC_STATIC,75,75,40,10
+    LTEXT           "Kierunek: Informatyka i Elektronika Techniczna",
+                    IDC_STATIC,20,55,170,10
+    LTEXT           "Elektrotechnika",IDC_STATIC,70,45,50,10
+    LTEXT           "Rok akademicki 2006/2007",IDC_STATIC,50,85,130,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Tomaszewski MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Tomaszewski\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Tomaszewski.EXE\0"
+            VALUE "ProductName", "Tomaszewski Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Tomaszewski\n\nTomasz\n\n\nTomaszewski.Document\nTomasz Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Tomaszewski"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SYMBOL_STOP          "Animacja stop\nStop"
+    ID_SYMBOL_D             "Animacja dwon\nDown"
+    ID_SYMBOL_P             "Animacja right\nRight"
+    ID_SYMBOL_L             "Animacja left\nLeft"
+    ID_PARAMETRY            "Parametry symbolu"
+    ID_ZMIEN_TAK            "Animcja zmien kolor"
+    ID_OPCJE_ZMIENKOLOR_NIE "Animacja niezmieniaj koloru"
+    ID_SYMBOL_G             "Animacja up\nUp"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Tomaszewski.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
